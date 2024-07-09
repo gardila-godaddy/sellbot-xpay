@@ -1,2 +1,11 @@
 keypair.pem
 node_modules
+
+# macOS-specific file
+.DS_Store
+
+# private configs
+configs.json
+
+# env variables
+.env
