@@ -4,5 +4,8 @@
 
   "collectApiKey": "",
   "collectBusinessId": "fa039358-6752-41fa-a6f3-3ea6b744ee0e",
-  "collectTheme": "default"
+  "collectTheme": "default",
+
+  "businessCountry": "IT",
+  "businessCurrency": "EUR"
 }
