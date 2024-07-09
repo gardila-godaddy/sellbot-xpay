@@ -162,13 +162,33 @@ block scripts
 
     //- tokenize
     var poyntCollect = document.createElement('script');
+
+    /* to use Google reCAPTCHA
+
+      1. Increase the size of the iFrame, if needed, to prevent reCAPTCHA logo to overlap PoyntCollect form
+      2  Enable reCAPTCHA in options
+      3. Pass reCAPTCHA options
+      4. If option = TEXT, configure reCaptcha styling options (in customCss)
+      5. Interpret assessment (done automatically by GoDaddy)
+      
+      For more info (GoDaddy internal): https://godaddy-corp.atlassian.net/wiki/spaces/CPPE/pages/508765587/reCAPTCHA+integration+with+Poynt+Collect
+    */
+
     var options = {
       amount: 1500,
       iFrame: {
         border: '0px',
-        height: '500px',
+        height: '500px', //1. Increase the size of the iFrame, if needed, to prevent reCaptcha logo to overlap PoyntCollect form
         width: '100%',
       },
+      /*
+        // 2. Enable reCaptcha
+        enableReCaptcha: true,
+        // 3. Pass reCaptcha options
+        reCaptchaOptions: {
+          type: "DEFAULT", //can be "TEXT" or "DEFAULT" (if options are not pasesed)
+        },
+      */
       style: {
         theme: '#{theme}'
       },
@@ -251,6 +271,19 @@ block scripts
           "padding-left": "0px",
           "padding-right": "0px",
         },
+        /*
+        //4. If option = TEXT, configure reCAPTCHA styling options          
+        reCaptcha: {
+          text: {
+            "font-size": "10px",
+            "color": "black",
+          },
+          link: {
+            "text-decoration": "none",
+            "color": "red",
+          },
+        },
+        */
       },
       displayComponents: {
         firstName: true,
