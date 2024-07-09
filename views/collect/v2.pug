@@ -166,11 +166,91 @@ block scripts
       amount: 1500,
       iFrame: {
         border: '0px',
-        height: '320px',
+        height: '500px',
         width: '100%',
       },
       style: {
         theme: '#{theme}'
+      },
+      customCss: {
+        container: {
+          "color": "#111",
+          "font-family": "Roboto, sans-serif",
+          "height": "auto",
+          "flex-flow": "row wrap",
+          "justify-content": "normal",
+          "align-content": "center",
+          "margin": "15px auto",
+        },
+        inputLabel: {
+          "color": "#111",
+          "display": "block",
+          "font-size": "15px",
+          "font-weight": "700",
+          "line-height": "20px",
+          "margin-bottom": "7.5px",
+          "margin-top": "5px",
+          "text-transform": "capitalize",
+          "letter-spacing": "0px",
+        },
+        inputDefault: {
+          "color": "#111",
+          "font-family": "Roboto, sans-serif",
+          "font-size": "15px",
+          "line-height": "30px",
+        },
+        sectionLabel: {
+          "font-size": "13px",
+          "line-height": "18px",
+          "font-weight": "500",
+          "letter-spacing": "0.5px",
+          "color": "#767676",
+          "text-transform": "uppercase",
+          "margin-top": "15px",
+          "margin-bottom": "10px",
+          "padding-left": "0px",
+          "padding-right": "0px",
+        },
+        requiredMark: {
+          "color": "#ae1302",
+          "font-size": "15px",
+          "line-height": "20px",
+          "margin-left": "3px",
+        },
+        rowFirstName: {
+          "width": "50%",
+          "padding-left": "0px",
+        },
+        rowLastName: {
+          "width": "50%",
+          "padding-right": "0px",
+        },
+        rowCardNumber: {
+          "width": "70%",
+          "padding-left": "0px",
+          //"padding-right": "0px",
+        },
+        rowExpiration: {
+          "width": "30%",
+          //"padding-left": "0px",
+          "padding-right": "5px",
+        },
+        rowCVV: {
+          "width": "50%",
+          "padding-left": "0px",
+          //"padding-right": "0px",
+        },
+        rowZip: {
+          "width": "50%",
+          //"padding-left": "0px",
+          "padding-right": "0px",
+        },
+        rowEmailAddress: {
+          "width": "100%",
+          "margin-bottom": "3px",
+          "padding-left": "0px",
+          "padding-right": "0px",
+        },
       },
       displayComponents: {
         firstName: true,
