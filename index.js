@@ -11,9 +11,9 @@ app.use(express.static("public"));
 // global configs
 global.configs = require("./lib/configs");
 
-// redirect home to Connect demo
+// redirect home to Collect demo
 app.get("/", (_req, res) => {
-  res.redirect("/link");
+  res.redirect("/collect");
 });
 
 app.use("/link", require("./routes/link"));
